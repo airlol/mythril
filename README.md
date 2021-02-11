@@ -20,7 +20,8 @@ class MythrilCommand {
 
 }
 
-var mythril = Mythril()
+// in onEnable
+var mythril = Mythril(this)
 mythril.register(MythrilCommand())
 
 ```
@@ -47,7 +48,8 @@ class PlayerProvider: CommandProvider<Player?>("PLAYER") {
 
 }
 
-var mythril = Mythril()
+// in onEnable
+var mythril = Mythril(this)
 mythril.register(Player::class.java, PlayerProvider())
 
 ```
