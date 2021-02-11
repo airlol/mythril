@@ -1,0 +1,4 @@
+name: Mythril
+main: com.niteah.mythril.test.MythrilTestPlugin
+author: Niteah
+version: 0.1
