@@ -2,9 +2,8 @@ package com.niteah.mythril
 
 import com.niteah.mythril.command.Command
 import com.niteah.mythril.command.MythrilCommand
-import com.niteah.mythril.command.annotation.Completer
 import com.niteah.mythril.command.bukkit.MythrilBukkitCommand
-import com.niteah.mythril.command.bukkit.MythrilPaperListener
+import com.niteah.mythril.command.bukkit.MythrilListener
 import com.niteah.mythril.command.executor.CommandExecutor
 import com.niteah.mythril.command.executor.impl.DefaultCommandExecutor
 import com.niteah.mythril.command.provider.CommandProvider
@@ -15,31 +14,23 @@ import org.bukkit.Bukkit
 import org.bukkit.OfflinePlayer
 import org.bukkit.entity.Player
 import org.bukkit.plugin.java.JavaPlugin
-import java.util.concurrent.Callable
-import kotlin.reflect.KClass
 import com.niteah.mythril.command.CommandCompletionResolver as CommandCompletionResolver
 
 class Mythril (val plugin: JavaPlugin) {
 
-    companion object {
-        val VERSION = "v1"
-    }
-
-    val registry: CommandRegistry = DefaultCommandRegistry()
+    private val registry: CommandRegistry = DefaultCommandRegistry()
     val executor: CommandExecutor = DefaultCommandExecutor(this)
 
     private val providers = mutableMapOf<String, CommandProvider<*>>()
     private val customCompletions = mutableMapOf<String, CommandCompletionResolver>()
 
     init {
-        Bukkit.getPluginManager().registerEvents(MythrilPaperListener(this), plugin)
+        Bukkit.getPluginManager().registerEvents(MythrilListener(this), plugin)
 
         register("nothing", object : CommandCompletionResolver {
-
             override fun call(): List<String> {
                 return emptyList()
             }
-
         })
 
         register(Boolean::class.java, BooleanProvider())

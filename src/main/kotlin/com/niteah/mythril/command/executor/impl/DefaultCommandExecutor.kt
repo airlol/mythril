@@ -1,5 +1,6 @@
 package com.niteah.mythril.command.executor.impl
 
+import com.niteah.mythril.Locale
 import com.niteah.mythril.Mythril
 import com.niteah.mythril.command.Command
 import com.niteah.mythril.command.CommandContext
@@ -21,7 +22,7 @@ class DefaultCommandExecutor (val mythril: Mythril): CommandExecutor {
     override fun execute(sender: CommandSender, label: String, command: Command, arguments: List<String>): Boolean {
 
         if (command.getRequiredPermission() != "" && !sender.hasPermission(command.getRequiredPermission())) {
-            sender.sendMessage(ChatColor.RED.toString() + "You don't have permission to execute this command.")
+            sender.sendMessage(Locale.NO_PERMISSION.message)
             return true
         }
 
@@ -47,12 +48,12 @@ class DefaultCommandExecutor (val mythril: Mythril): CommandExecutor {
         if (primary == null) return false
 
         if (sender !is Player && (primary.isAnnotationPresent(PlayerOnly::class.java) || command.isPlayerOnly())) {
-            sender.sendMessage(ChatColor.RED.toString() + "You must be a player to execute this command!")
+            sender.sendMessage(Locale.PLAYER_ONLY.message)
             return true
         }
 
         if (sender is Player && (primary.isAnnotationPresent(ConsoleOnly::class.java) || command.isConsoleOnly())) {
-            sender.sendMessage(ChatColor.RED.toString() + "You must be in console to execute this command!")
+            sender.sendMessage(Locale.CONSOLE_ONLY.message)
             return true
         }
 
@@ -131,17 +132,17 @@ class DefaultCommandExecutor (val mythril: Mythril): CommandExecutor {
         if (primary == null) return false
 
         if (command.getRequiredPermission(primary) != "" && !sender.hasPermission(command.getRequiredPermission(primary))) {
-            sender.sendMessage(ChatColor.RED.toString() + "You don't have permission to execute this command.")
+            sender.sendMessage(Locale.NO_PERMISSION.message)
             return true
         }
 
         if (sender !is Player && (primary.isAnnotationPresent(PlayerOnly::class.java) || command.isPlayerOnly())) {
-            sender.sendMessage(ChatColor.RED.toString() + "You must be a player to execute this command!")
+            sender.sendMessage(Locale.PLAYER_ONLY.message)
             return true
         }
 
         if (sender is Player && primary.isAnnotationPresent(ConsoleOnly::class.java) || command.isConsoleOnly()) {
-            sender.sendMessage(ChatColor.RED.toString() + "You must be in console to execute this command!")
+            sender.sendMessage(Locale.CONSOLE_ONLY.message)
             return true
         }
 

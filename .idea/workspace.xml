@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="330e86b4-5121-47c1-8d25-30be9493b8a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/Locale.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mythril.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/Mythril.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/Mythril.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/command/CommandContext.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/command/CommandContext.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/command/executor/impl/DefaultCommandExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/command/executor/impl/DefaultCommandExecutor.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1roDcxUEEjk8IG0PystAhu7MnFn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="330e86b4-5121-47c1-8d25-30be9493b8a6" name="Default Changelist" comment="" />
+      <created>1619633631293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619633631293</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1186" y="308" key="FileChooserDialogImpl" timestamp="1619633652798">
+      <screen x="-1920" y="70" width="1920" height="1040" />
+    </state>
+    <state x="-1186" y="308" key="FileChooserDialogImpl/0.0.1920.1040/-1920.70.1920.1040@-1920.70.1920.1040" timestamp="1619633652798" />
+  </component>
+</project>

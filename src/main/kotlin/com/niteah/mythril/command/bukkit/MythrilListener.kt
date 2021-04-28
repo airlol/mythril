@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.server.TabCompleteEvent
 
-class MythrilPaperListener(val mythril: Mythril): Listener {
+class MythrilListener(val mythril: Mythril): Listener {
 
     @EventHandler
     fun onTabComplete(event: TabCompleteEvent) {
