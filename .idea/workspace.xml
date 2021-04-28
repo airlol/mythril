@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="330e86b4-5121-47c1-8d25-30be9493b8a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/Locale.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mythril.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/Mythril.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/Mythril.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/command/CommandContext.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/command/CommandContext.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/command/executor/impl/DefaultCommandExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/niteah/mythril/command/executor/impl/DefaultCommandExecutor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../amethyst" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -62,9 +58,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1186" y="308" key="FileChooserDialogImpl" timestamp="1619633652798">
-      <screen x="-1920" y="70" width="1920" height="1040" />
+    <state x="734" y="238" key="FileChooserDialogImpl" timestamp="1619634806174">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1186" y="308" key="FileChooserDialogImpl/0.0.1920.1040/-1920.70.1920.1040@-1920.70.1920.1040" timestamp="1619633652798" />
+    <state x="734" y="238" key="FileChooserDialogImpl/0.0.1920.1040/-1920.70.1920.1040@0.0.1920.1040" timestamp="1619634806174" />
   </component>
 </project>
